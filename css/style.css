@@ -1,0 +1,96 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel:900');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+/* gerais */
+
+body {
+    margin: 0;
+    max-width: 100%;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    background-color: black;
+}
+
+header h1 {
+    margin: 0;
+    padding: 2% 2% 0% 2%;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 4vw;
+}
+
+header h2 {
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1.7vw;
+}
+
+
+/* Divisão das colunas */
+
+#container {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin: 0% 15% 0% 15%;
+}
+
+.col {
+    float: left;
+}
+
+.col4 {
+    width: 31.332%;
+    padding: 1%;
+}
+
+.col12 {
+    width: 98%;
+    padding: 1%;
+}
+
+
+/* Formatação dos filmes */
+
+.filme {
+    text-align: center;
+    position: relative;
+    border: 8px solid #fff;
+    box-shadow: 1px 1px 4px #000;
+}
+
+.filme img {
+    width: 100%;
+    height: 100%;
+}
+
+.filme figcaption {
+    position: absolute;
+    top: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: opacity 0.5s;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.filme figcaption p {
+    font-size: 210%;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.filme figcaption:hover {
+    opacity: 1;
+}
