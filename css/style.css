@@ -90,6 +90,56 @@ header h2 {
     padding: 1%;
 }
 
+@media only screen and (max-width: 648px) {
+    header h1 {
+        font-size: 8vw;
+    }
+    header h2 {
+        font-size: 3.4vw;
+    }
+    #container {
+        position: relative;
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin: 0% 10% 0% 10%;
+        -webkit-animation: mymove 1s;
+        animation: mymove 1s;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+        border-radius: 0 0 .5% .5%;
+    }
+    .col4 {
+        width: 98%;
+        padding: 1%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 648px) {
+    header h1 {
+        font-size: 6vw;
+    }
+    header h2 {
+        font-size: 2.55vw;
+    }
+    #container {
+        position: relative;
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin: 0% 5% 0% 5%;
+        -webkit-animation: mymove 1s;
+        animation: mymove 1s;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+        border-radius: 0 0 .5% .5%;
+    }
+    .col4 {
+        width: 48%;
+        padding: 1%;
+    }
+}
+
 
 /* Formatação dos filmes */
 
@@ -129,4 +179,8 @@ header h2 {
 
 .filme figcaption:hover {
     opacity: 1;
+}
+
+img, embed, object, video {
+    max-width: 100%;
 }
