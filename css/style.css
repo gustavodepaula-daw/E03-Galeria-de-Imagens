@@ -1,186 +1,151 @@
+@charset "UTF-8";
 /* imports */
-
-@import url('https://fonts.googleapis.com/css?family=Cinzel:900');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-
+@import url("https://fonts.googleapis.com/css?family=Cinzel:900");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+/* variaveis */
 /* gerais */
-
 .clearfix {
-    overflow: auto;
-    zoom: 1;
-}
+  overflow: auto;
+  zoom: 1; }
 
 body {
-    max-width: 100%;
-    margin: 0 0 1% 0;
-    background-color: #ddd;
-}
-
+  max-width: 100%;
+  margin: 0 0 1% 0;
+  background-color: #ddd; }
 
 /* Header */
-
 header {
-    text-align: center;
-    background: linear-gradient(black, #402726);
-    -webkit-animation: mymove 1s;
-    animation: mymove 1s;
-}
+  text-align: center;
+  background: linear-gradient(black, #402726);
+  -webkit-animation: mymove 1s;
+  animation: mymove 1s; }
 
 header h1 {
-    margin: 0;
-    padding: 2% 2% 0% 2%;
-    text-transform: uppercase;
-    color: white;
-    font-family: 'Cinzel', serif;
-    font-size: 4vw;
-}
+  margin: 0;
+  padding: 2% 2% 0% 2%;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 4vw; }
 
 header h2 {
-    text-transform: capitalize;
-    color: white;
-    font-family: 'Cinzel', serif;
-    font-size: 1.7vw;
-}
-
+  text-transform: capitalize;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 1.7vw; }
 
 /* Divisão das colunas */
-
 #container {
-    position: relative;
-    display: block;
-    width: 70%;
-    margin: auto;
-    margin: 0% 15% 0% 15%;
-    -webkit-animation: mymove 3s;
-    animation: mymove 3s;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
-    border-radius: 0 0 .5% .5%;
-}
+  position: relative;
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin: 0% 15% 0% 15%;
+  -webkit-animation: mymove 3s;
+  animation: mymove 3s;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 .5% .5%; }
 
 @-webkit-keyframes mymove {
-    0% {
-        transform: translateY(50%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
+  0% {
+    transform: translateY(50%); }
+  100% {
+    transform: translateY(0); } }
 @keyframes mymove {
-    0% {
-        transform: translateY(50%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
+  0% {
+    transform: translateY(50%); }
+  100% {
+    transform: translateY(0); } }
 .col {
-    float: left;
-}
+  float: left; }
 
 .col4 {
-    width: 31.332%;
-    padding: 1%;
-}
+  width: 31.332%;
+  padding: 1%; }
 
 .col12 {
-    width: 98%;
-    padding: 1%;
-}
+  width: 98%;
+  padding: 1%; }
 
 @media only screen and (max-width: 648px) {
-    header h1 {
-        font-size: 8vw;
-    }
-    header h2 {
-        font-size: 3.4vw;
-    }
-    #container {
-        position: relative;
-        display: block;
-        width: 80%;
-        margin: auto;
-        margin: 0% 10% 0% 10%;
-        -webkit-animation: mymove 1s;
-        animation: mymove 1s;
-        background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
-        border-radius: 0 0 .5% .5%;
-    }
-    .col4 {
-        width: 98%;
-        padding: 1%;
-    }
-}
+  header h1 {
+    font-size: 8vw; }
 
+  header h2 {
+    font-size: 3.4vw; }
+
+  #container {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin: 0% 10% 0% 10%;
+    -webkit-animation: mymove 1s;
+    animation: mymove 1s;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 .5% .5%; }
+
+  .col4 {
+    width: 98%;
+    padding: 1%; } }
 @media (max-width: 1024px) and (min-width: 648px) {
-    header h1 {
-        font-size: 6vw;
-    }
-    header h2 {
-        font-size: 2.55vw;
-    }
-    #container {
-        position: relative;
-        display: block;
-        width: 90%;
-        margin: auto;
-        margin: 0% 5% 0% 5%;
-        -webkit-animation: mymove 1s;
-        animation: mymove 1s;
-        background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
-        border-radius: 0 0 .5% .5%;
-    }
-    .col4 {
-        width: 48%;
-        padding: 1%;
-    }
-}
+  header h1 {
+    font-size: 6vw; }
 
+  header h2 {
+    font-size: 2.55vw; }
 
+  #container {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin: 0% 5% 0% 5%;
+    -webkit-animation: mymove 1s;
+    animation: mymove 1s;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 .5% .5%; }
+
+  .col4 {
+    width: 48%;
+    padding: 1%; } }
 /* Formatação dos filmes */
-
 .filme, .filme img, .filme figcaption {
-    border-radius: 2%;
-}
+  border-radius: 2%; }
 
 .filme {
-    position: relative;
-    text-align: center;
-    border: 8px solid #fff;
-    box-shadow: 1px 1px 4px #000;
-}
+  position: relative;
+  text-align: center;
+  border: 8px solid #fff;
+  box-shadow: 1px 1px 4px #000; }
 
 .filme img {
-    width: 100%;
-    height: 100%;
-}
+  width: 100%;
+  height: 100%; }
 
 .filme figcaption {
-    position: absolute;
-    top: 0px;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    transition: opacity 0.5s;
-    opacity: 0;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, .7);
-}
+  position: absolute;
+  top: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: opacity 0.5s;
+  opacity: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .filme figcaption p {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 210%;
-}
+  font-family: "Permanent Marker", cursive;
+  font-size: 210%; }
 
 .filme figcaption:hover {
-    opacity: 1;
-}
+  opacity: 1; }
 
 img, embed, object, video {
-    max-width: 100%;
-}
+  max-width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
